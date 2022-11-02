@@ -454,7 +454,7 @@ public class empleados extends javax.swing.JFrame {
             PreparedStatement ps = objetoConexion.getConexion().prepareStatement("DELETE FROM genero WHERE numero_de_documento=? ");
             ps.setInt(1, numero_de_documento);
             ps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "datos eliminados");
+            JOptionPane.showMessageDialog(null, "datos eliminados correctamanete");
             limpiar();
             cargarDatos();
         } catch (SQLException e) {
